@@ -77,6 +77,14 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 
 - 单机微信聊天框即可朗读文本消息
 
+### 思路分析
+
+```
+1、hook点击事件，过滤非文本消息
+	BaseMsgContentViewController  -  didSelectRowAtIndexPath
+2、使用AVSpeechUtterance朗读文字
+```
+
 ### 已知问题
 
 - deb版本，领取红包次数过多时微信提示异常，猜测是微信反作弊系统误伤
@@ -88,14 +96,4 @@ sudo /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/AloneMonkey/Monk
 - 完全开源，无任何恶意代码（包括抢红包、修改步数功能）。
 - 如有新的想法，请[issues](https://github.com/sunweiliang/MAMA/issues), 我会在第一时间回复。
 - 最后，希望能够帮助到不识字的人群，带给他们快乐。
-
-### 思路分析
-
-```
-1、hook点击事件，过滤非文本消息
-	BaseMsgContentViewController  -  didSelectRowAtIndexPath
-2、使用AVSpeechUtterance朗读文字
-```
-
-
 
