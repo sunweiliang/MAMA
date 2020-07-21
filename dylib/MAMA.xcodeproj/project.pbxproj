@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C02F1B8324C757D4006952B0 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = C02F1B8224C757D4006952B0 /* MDConfig.plist */; };
+		C02F1B8D24C757D4006952B0 /* libMAMADylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C02F1B8C24C757D4006952B0 /* libMAMADylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C02F1B9224C757D4006952B0 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F1B9124C757D4006952B0 /* JavaScriptCore.framework */; };
+		C02F1B9424C757D4006952B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F1B9324C757D4006952B0 /* Foundation.framework */; };
+		C02F1B9624C757D4006952B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F1B9524C757D4006952B0 /* UIKit.framework */; };
+		C02F1B9B24C757D4006952B0 /* MAMADylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = C02F1B9A24C757D4006952B0 /* MAMADylib.mm */; };
+		C02F1B9E24C757D4006952B0 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1B9D24C757D4006952B0 /* MDConfigManager.h */; };
+		C02F1BA024C757D4006952B0 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1B9F24C757D4006952B0 /* MDConfigManager.m */; };
+		C02F1BA224C757D4006952B0 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BA124C757D4006952B0 /* MDCycriptManager.h */; };
+		C02F1BA424C757D4006952B0 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BA324C757D4006952B0 /* MDCycriptManager.m */; };
+		C02F1BA624C757D4006952B0 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BA524C757D4006952B0 /* MDMethodTrace.h */; };
+		C02F1BA824C757D4006952B0 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BA724C757D4006952B0 /* MDMethodTrace.m */; };
+		C02F1BAB24C757D4006952B0 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BAA24C757D4006952B0 /* a1a2-selectortramps-arm.s */; };
+		C02F1BAD24C757D4006952B0 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BAC24C757D4006952B0 /* a1a2-selectortramps-arm64.s */; };
+		C02F1BAF24C757D4006952B0 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BAE24C757D4006952B0 /* a1a2-selectortramps-i386.s */; };
+		C02F1BB124C757D4006952B0 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BB024C757D4006952B0 /* a1a2-selectortramps-x86_64.s */; };
+		C02F1BB324C757D4006952B0 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BB224C757D4006952B0 /* a2a3-selectortramps-arm.s */; };
+		C02F1BB524C757D4006952B0 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BB424C757D4006952B0 /* a2a3-selectortramps-i386.s */; };
+		C02F1BB724C757D4006952B0 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BB624C757D4006952B0 /* a2a3-selectortramps-x86_64.s */; };
+		C02F1BB924C757D4006952B0 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BB824C757D4006952B0 /* OCMethodTrace.h */; };
+		C02F1BBB24C757D4006952B0 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BBA24C757D4006952B0 /* OCMethodTrace.m */; };
+		C02F1BBD24C757D4006952B0 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BBC24C757D4006952B0 /* OCSelectorTrampolines.h */; };
+		C02F1BBF24C757D5006952B0 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BBE24C757D4006952B0 /* OCSelectorTrampolines.mm */; };
+		C02F1BC324C757D5006952B0 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BC224C757D5006952B0 /* LLDBTools.h */; };
+		C02F1BC524C757D5006952B0 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BC424C757D5006952B0 /* LLDBTools.mm */; };
+		C02F1BCA24C757D5006952B0 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BC924C757D5006952B0 /* AntiAntiDebug.m */; };
+		C02F1BCD24C757D5006952B0 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BCC24C757D5006952B0 /* fishhook.c */; };
+		C02F1BCF24C757D5006952B0 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BCE24C757D5006952B0 /* fishhook.h */; };
+		C02F1BD124C757D5006952B0 /* MAMADylib.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BD024C757D5006952B0 /* MAMADylib.h */; };
+		C02F1BD324C757D5006952B0 /* MAMADylib.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BD224C757D5006952B0 /* MAMADylib.m */; };
+		C02F1BFA24C75831006952B0 /* ShakeMMHelperConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BDE24C75830006952B0 /* ShakeMMHelperConfig.m */; };
+		C02F1BFB24C75831006952B0 /* ShakeMMHelperConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BDF24C75830006952B0 /* ShakeMMHelperConfig.h */; };
+		C02F1BFC24C75831006952B0 /* ShakeMMHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BE024C75830006952B0 /* ShakeMMHelper.mm */; };
+		C02F1BFD24C75831006952B0 /* ShakeMMHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BE124C75830006952B0 /* ShakeMMHelper.h */; };
+		C02F1BFE24C75831006952B0 /* ShakeMMViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BE224C75830006952B0 /* ShakeMMViewController.h */; };
+		C02F1BFF24C75831006952B0 /* BDSSynthesizerStatusNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BE724C75830006952B0 /* BDSSynthesizerStatusNotifications.h */; };
+		C02F1C0024C75831006952B0 /* BDSSpeechSynthesizerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BE824C75830006952B0 /* BDSSpeechSynthesizerDelegate.h */; };
+		C02F1C0124C75831006952B0 /* BDS_EttsModelManagerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BE924C75830006952B0 /* BDS_EttsModelManagerInterface.h */; };
+		C02F1C0224C75831006952B0 /* BDSBuiltInPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BEA24C75830006952B0 /* BDSBuiltInPlayer.h */; };
+		C02F1C0324C75831006952B0 /* BDSMixedModeSynthesizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BEB24C75830006952B0 /* BDSMixedModeSynthesizer.h */; };
+		C02F1C0424C75831006952B0 /* BDSSpeechSynthesizer.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BEC24C75830006952B0 /* BDSSpeechSynthesizer.h */; };
+		C02F1C0524C75831006952B0 /* BDSSpeechSynthesizerParams.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BED24C75830006952B0 /* BDSSpeechSynthesizerParams.h */; };
+		C02F1C0624C75831006952B0 /* BDSSynthesizerLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BEE24C75830006952B0 /* BDSSynthesizerLogLevel.h */; };
+		C02F1C0724C75831006952B0 /* BDSTTSEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BEF24C75830006952B0 /* BDSTTSEventManager.h */; };
+		C02F1C0824C75831006952B0 /* BDSSpeechSynthesizerErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BF024C75830006952B0 /* BDSSpeechSynthesizerErrors.h */; };
+		C02F1C0924C75831006952B0 /* libBaiduSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C02F1BF224C75830006952B0 /* libBaiduSpeechSDK.a */; };
+		C02F1C0A24C75831006952B0 /* UiUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BF524C75830006952B0 /* UiUtil.h */; };
+		C02F1C0B24C75831006952B0 /* MMUICommonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BF624C75830006952B0 /* MMUICommonUtil.h */; };
+		C02F1C0C24C75831006952B0 /* WechatHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BF724C75830006952B0 /* WechatHeaders.h */; };
+		C02F1C0D24C75831006952B0 /* WCUIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = C02F1BF824C75830006952B0 /* WCUIAlertView.h */; };
+		C02F1C0E24C75831006952B0 /* ShakeMMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C02F1BF924C75830006952B0 /* ShakeMMViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C02F1B8E24C757D4006952B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C02F1B7024C757D4006952B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C02F1B8B24C757D4006952B0;
+			remoteInfo = MAMADylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C02F1B7824C757D4006952B0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C02F1B8D24C757D4006952B0 /* libMAMADylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C02F1B7B24C757D4006952B0 /* MAMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02F1B7E24C757D4006952B0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C02F1B8024C757D4006952B0 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		C02F1B8224C757D4006952B0 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		C02F1B8524C757D4006952B0 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		C02F1B8624C757D4006952B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02F1B8C24C757D4006952B0 /* libMAMADylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMAMADylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02F1B9124C757D4006952B0 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		C02F1B9324C757D4006952B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C02F1B9524C757D4006952B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C02F1B9924C757D4006952B0 /* MAMADylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = MAMADylib.xm; sourceTree = "<group>"; };
+		C02F1B9A24C757D4006952B0 /* MAMADylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MAMADylib.mm; sourceTree = "<group>"; };
+		C02F1B9D24C757D4006952B0 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		C02F1B9F24C757D4006952B0 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		C02F1BA124C757D4006952B0 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		C02F1BA324C757D4006952B0 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		C02F1BA524C757D4006952B0 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		C02F1BA724C757D4006952B0 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		C02F1BAA24C757D4006952B0 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		C02F1BAC24C757D4006952B0 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		C02F1BAE24C757D4006952B0 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		C02F1BB024C757D4006952B0 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		C02F1BB224C757D4006952B0 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		C02F1BB424C757D4006952B0 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		C02F1BB624C757D4006952B0 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		C02F1BB824C757D4006952B0 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		C02F1BBA24C757D4006952B0 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		C02F1BBC24C757D4006952B0 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		C02F1BBE24C757D4006952B0 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		C02F1BC024C757D5006952B0 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		C02F1BC224C757D5006952B0 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		C02F1BC424C757D5006952B0 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		C02F1BC724C757D5006952B0 /* MAMADylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MAMADylib-Prefix.pch"; path = "../MAMADylib-Prefix.pch"; sourceTree = "<group>"; };
+		C02F1BC924C757D5006952B0 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		C02F1BCC24C757D5006952B0 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		C02F1BCE24C757D5006952B0 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		C02F1BD024C757D5006952B0 /* MAMADylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAMADylib.h; sourceTree = "<group>"; };
+		C02F1BD224C757D5006952B0 /* MAMADylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAMADylib.m; sourceTree = "<group>"; };
+		C02F1BDE24C75830006952B0 /* ShakeMMHelperConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeMMHelperConfig.m; sourceTree = "<group>"; };
+		C02F1BDF24C75830006952B0 /* ShakeMMHelperConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeMMHelperConfig.h; sourceTree = "<group>"; };
+		C02F1BE024C75830006952B0 /* ShakeMMHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShakeMMHelper.mm; sourceTree = "<group>"; };
+		C02F1BE124C75830006952B0 /* ShakeMMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeMMHelper.h; sourceTree = "<group>"; };
+		C02F1BE224C75830006952B0 /* ShakeMMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeMMViewController.h; sourceTree = "<group>"; };
+		C02F1BE724C75830006952B0 /* BDSSynthesizerStatusNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerStatusNotifications.h; sourceTree = "<group>"; };
+		C02F1BE824C75830006952B0 /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerDelegate.h; sourceTree = "<group>"; };
+		C02F1BE924C75830006952B0 /* BDS_EttsModelManagerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDS_EttsModelManagerInterface.h; sourceTree = "<group>"; };
+		C02F1BEA24C75830006952B0 /* BDSBuiltInPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSBuiltInPlayer.h; sourceTree = "<group>"; };
+		C02F1BEB24C75830006952B0 /* BDSMixedModeSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSMixedModeSynthesizer.h; sourceTree = "<group>"; };
+		C02F1BEC24C75830006952B0 /* BDSSpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizer.h; sourceTree = "<group>"; };
+		C02F1BED24C75830006952B0 /* BDSSpeechSynthesizerParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerParams.h; sourceTree = "<group>"; };
+		C02F1BEE24C75830006952B0 /* BDSSynthesizerLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerLogLevel.h; sourceTree = "<group>"; };
+		C02F1BEF24C75830006952B0 /* BDSTTSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSTTSEventManager.h; sourceTree = "<group>"; };
+		C02F1BF024C75830006952B0 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerErrors.h; sourceTree = "<group>"; };
+		C02F1BF224C75830006952B0 /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
+		C02F1BF324C75830006952B0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C02F1BF524C75830006952B0 /* UiUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiUtil.h; sourceTree = "<group>"; };
+		C02F1BF624C75830006952B0 /* MMUICommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUICommonUtil.h; sourceTree = "<group>"; };
+		C02F1BF724C75830006952B0 /* WechatHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatHeaders.h; sourceTree = "<group>"; };
+		C02F1BF824C75830006952B0 /* WCUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUIAlertView.h; sourceTree = "<group>"; };
+		C02F1BF924C75830006952B0 /* ShakeMMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeMMViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C02F1B7524C757D4006952B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02F1B8924C757D4006952B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F1C0924C75831006952B0 /* libBaiduSpeechSDK.a in Frameworks */,
+				C02F1B9224C757D4006952B0 /* JavaScriptCore.framework in Frameworks */,
+				C02F1B9624C757D4006952B0 /* UIKit.framework in Frameworks */,
+				C02F1B9424C757D4006952B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C02F1B6F24C757D4006952B0 = {
+			isa = PBXGroup;
+			children = (
+				C02F1B7D24C757D4006952B0 /* MAMA */,
+				C02F1B9724C757D4006952B0 /* MAMADylib */,
+				C02F1B9024C757D4006952B0 /* Frameworks */,
+				C02F1B7C24C757D4006952B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C02F1B7C24C757D4006952B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B7B24C757D4006952B0 /* MAMA.app */,
+				C02F1B8C24C757D4006952B0 /* libMAMADylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C02F1B7D24C757D4006952B0 /* MAMA */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B7E24C757D4006952B0 /* icon.png */,
+				C02F1B8624C757D4006952B0 /* Info.plist */,
+				C02F1B7F24C757D4006952B0 /* Scripts */,
+				C02F1B8124C757D4006952B0 /* Config */,
+				C02F1B8424C757D4006952B0 /* TargetApp */,
+			);
+			path = MAMA;
+			sourceTree = "<group>";
+		};
+		C02F1B7F24C757D4006952B0 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B8024C757D4006952B0 /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		C02F1B8124C757D4006952B0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B8224C757D4006952B0 /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C02F1B8424C757D4006952B0 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B8524C757D4006952B0 /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		C02F1B9024C757D4006952B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B9124C757D4006952B0 /* JavaScriptCore.framework */,
+				C02F1B9324C757D4006952B0 /* Foundation.framework */,
+				C02F1B9524C757D4006952B0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C02F1B9724C757D4006952B0 /* MAMADylib */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BDC24C75830006952B0 /* Class */,
+				C02F1BD024C757D5006952B0 /* MAMADylib.h */,
+				C02F1BD224C757D5006952B0 /* MAMADylib.m */,
+				C02F1B9824C757D4006952B0 /* Logos */,
+				C02F1B9C24C757D4006952B0 /* Config */,
+				C02F1BA924C757D4006952B0 /* Trace */,
+				C02F1BC124C757D5006952B0 /* Tools */,
+				C02F1BC824C757D5006952B0 /* AntiAntiDebug */,
+				C02F1BCB24C757D5006952B0 /* fishhook */,
+				C02F1BC624C757D5006952B0 /* Supporting Files */,
+			);
+			path = MAMADylib;
+			sourceTree = "<group>";
+		};
+		C02F1B9824C757D4006952B0 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B9924C757D4006952B0 /* MAMADylib.xm */,
+				C02F1B9A24C757D4006952B0 /* MAMADylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		C02F1B9C24C757D4006952B0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1B9D24C757D4006952B0 /* MDConfigManager.h */,
+				C02F1B9F24C757D4006952B0 /* MDConfigManager.m */,
+				C02F1BA124C757D4006952B0 /* MDCycriptManager.h */,
+				C02F1BA324C757D4006952B0 /* MDCycriptManager.m */,
+				C02F1BA524C757D4006952B0 /* MDMethodTrace.h */,
+				C02F1BA724C757D4006952B0 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C02F1BA924C757D4006952B0 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BAA24C757D4006952B0 /* a1a2-selectortramps-arm.s */,
+				C02F1BAC24C757D4006952B0 /* a1a2-selectortramps-arm64.s */,
+				C02F1BAE24C757D4006952B0 /* a1a2-selectortramps-i386.s */,
+				C02F1BB024C757D4006952B0 /* a1a2-selectortramps-x86_64.s */,
+				C02F1BB224C757D4006952B0 /* a2a3-selectortramps-arm.s */,
+				C02F1BB424C757D4006952B0 /* a2a3-selectortramps-i386.s */,
+				C02F1BB624C757D4006952B0 /* a2a3-selectortramps-x86_64.s */,
+				C02F1BB824C757D4006952B0 /* OCMethodTrace.h */,
+				C02F1BBA24C757D4006952B0 /* OCMethodTrace.m */,
+				C02F1BBC24C757D4006952B0 /* OCSelectorTrampolines.h */,
+				C02F1BBE24C757D4006952B0 /* OCSelectorTrampolines.mm */,
+				C02F1BC024C757D5006952B0 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		C02F1BC124C757D5006952B0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BC224C757D5006952B0 /* LLDBTools.h */,
+				C02F1BC424C757D5006952B0 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C02F1BC624C757D5006952B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BC724C757D5006952B0 /* MAMADylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C02F1BC824C757D5006952B0 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BC924C757D5006952B0 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		C02F1BCB24C757D5006952B0 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BCC24C757D5006952B0 /* fishhook.c */,
+				C02F1BCE24C757D5006952B0 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		C02F1BDC24C75830006952B0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BDD24C75830006952B0 /* Tools */,
+				C02F1BE324C75830006952B0 /* Audio */,
+				C02F1BF424C75830006952B0 /* Header */,
+				C02F1BE224C75830006952B0 /* ShakeMMViewController.h */,
+				C02F1BF924C75830006952B0 /* ShakeMMViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		C02F1BDD24C75830006952B0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BDE24C75830006952B0 /* ShakeMMHelperConfig.m */,
+				C02F1BDF24C75830006952B0 /* ShakeMMHelperConfig.h */,
+				C02F1BE024C75830006952B0 /* ShakeMMHelper.mm */,
+				C02F1BE124C75830006952B0 /* ShakeMMHelper.h */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C02F1BE324C75830006952B0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BE424C75830006952B0 /* BDTTS */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		C02F1BE424C75830006952B0 /* BDTTS */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BE524C75830006952B0 /* BDSClientHeaders */,
+				C02F1BF124C75830006952B0 /* BDSClientLib */,
+			);
+			path = BDTTS;
+			sourceTree = "<group>";
+		};
+		C02F1BE524C75830006952B0 /* BDSClientHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BE624C75830006952B0 /* TTS */,
+			);
+			path = BDSClientHeaders;
+			sourceTree = "<group>";
+		};
+		C02F1BE624C75830006952B0 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BE724C75830006952B0 /* BDSSynthesizerStatusNotifications.h */,
+				C02F1BE824C75830006952B0 /* BDSSpeechSynthesizerDelegate.h */,
+				C02F1BE924C75830006952B0 /* BDS_EttsModelManagerInterface.h */,
+				C02F1BEA24C75830006952B0 /* BDSBuiltInPlayer.h */,
+				C02F1BEB24C75830006952B0 /* BDSMixedModeSynthesizer.h */,
+				C02F1BEC24C75830006952B0 /* BDSSpeechSynthesizer.h */,
+				C02F1BED24C75830006952B0 /* BDSSpeechSynthesizerParams.h */,
+				C02F1BEE24C75830006952B0 /* BDSSynthesizerLogLevel.h */,
+				C02F1BEF24C75830006952B0 /* BDSTTSEventManager.h */,
+				C02F1BF024C75830006952B0 /* BDSSpeechSynthesizerErrors.h */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		C02F1BF124C75830006952B0 /* BDSClientLib */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BF224C75830006952B0 /* libBaiduSpeechSDK.a */,
+				C02F1BF324C75830006952B0 /* .gitignore */,
+			);
+			path = BDSClientLib;
+			sourceTree = "<group>";
+		};
+		C02F1BF424C75830006952B0 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C02F1BF524C75830006952B0 /* UiUtil.h */,
+				C02F1BF624C75830006952B0 /* MMUICommonUtil.h */,
+				C02F1BF724C75830006952B0 /* WechatHeaders.h */,
+				C02F1BF824C75830006952B0 /* WCUIAlertView.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C02F1B8A24C757D4006952B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F1C0224C75831006952B0 /* BDSBuiltInPlayer.h in Headers */,
+				C02F1BFE24C75831006952B0 /* ShakeMMViewController.h in Headers */,
+				C02F1BA224C757D4006952B0 /* MDCycriptManager.h in Headers */,
+				C02F1C0824C75831006952B0 /* BDSSpeechSynthesizerErrors.h in Headers */,
+				C02F1C0724C75831006952B0 /* BDSTTSEventManager.h in Headers */,
+				C02F1BFB24C75831006952B0 /* ShakeMMHelperConfig.h in Headers */,
+				C02F1BD124C757D5006952B0 /* MAMADylib.h in Headers */,
+				C02F1C0624C75831006952B0 /* BDSSynthesizerLogLevel.h in Headers */,
+				C02F1BFF24C75831006952B0 /* BDSSynthesizerStatusNotifications.h in Headers */,
+				C02F1BA624C757D4006952B0 /* MDMethodTrace.h in Headers */,
+				C02F1BCF24C757D5006952B0 /* fishhook.h in Headers */,
+				C02F1BFD24C75831006952B0 /* ShakeMMHelper.h in Headers */,
+				C02F1BC324C757D5006952B0 /* LLDBTools.h in Headers */,
+				C02F1B9E24C757D4006952B0 /* MDConfigManager.h in Headers */,
+				C02F1C0D24C75831006952B0 /* WCUIAlertView.h in Headers */,
+				C02F1C0A24C75831006952B0 /* UiUtil.h in Headers */,
+				C02F1C0124C75831006952B0 /* BDS_EttsModelManagerInterface.h in Headers */,
+				C02F1C0324C75831006952B0 /* BDSMixedModeSynthesizer.h in Headers */,
+				C02F1C0524C75831006952B0 /* BDSSpeechSynthesizerParams.h in Headers */,
+				C02F1BBD24C757D4006952B0 /* OCSelectorTrampolines.h in Headers */,
+				C02F1C0424C75831006952B0 /* BDSSpeechSynthesizer.h in Headers */,
+				C02F1C0024C75831006952B0 /* BDSSpeechSynthesizerDelegate.h in Headers */,
+				C02F1C0C24C75831006952B0 /* WechatHeaders.h in Headers */,
+				C02F1BB924C757D4006952B0 /* OCMethodTrace.h in Headers */,
+				C02F1C0B24C75831006952B0 /* MMUICommonUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C02F1B7A24C757D4006952B0 /* MAMA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02F1BD924C757D5006952B0 /* Build configuration list for PBXNativeTarget "MAMA" */;
+			buildPhases = (
+				C02F1B7424C757D4006952B0 /* Sources */,
+				C02F1B7524C757D4006952B0 /* Frameworks */,
+				C02F1B7624C757D4006952B0 /* ShellScript */,
+				C02F1B7724C757D4006952B0 /* Resources */,
+				C02F1B7824C757D4006952B0 /* CopyFiles */,
+				C02F1B7924C757D4006952B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C02F1B8F24C757D4006952B0 /* PBXTargetDependency */,
+			);
+			name = MAMA;
+			productName = MAMA;
+			productReference = C02F1B7B24C757D4006952B0 /* MAMA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C02F1B8B24C757D4006952B0 /* MAMADylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C02F1BD624C757D5006952B0 /* Build configuration list for PBXNativeTarget "MAMADylib" */;
+			buildPhases = (
+				C02F1B8724C757D4006952B0 /* ShellScript */,
+				C02F1B8824C757D4006952B0 /* Sources */,
+				C02F1B8924C757D4006952B0 /* Frameworks */,
+				C02F1B8A24C757D4006952B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAMADylib;
+			productName = MAMADylib;
+			productReference = C02F1B8C24C757D4006952B0 /* libMAMADylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C02F1B7024C757D4006952B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Leo;
+				TargetAttributes = {
+					C02F1B7A24C757D4006952B0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					C02F1B8B24C757D4006952B0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = C02F1B7324C757D4006952B0 /* Build configuration list for PBXProject "MAMA" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C02F1B6F24C757D4006952B0;
+			productRefGroup = C02F1B7C24C757D4006952B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C02F1B7A24C757D4006952B0 /* MAMA */,
+				C02F1B8B24C757D4006952B0 /* MAMADylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C02F1B7724C757D4006952B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F1B8324C757D4006952B0 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C02F1B7624C757D4006952B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		C02F1B7924C757D4006952B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		C02F1B8724C757D4006952B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C02F1B7424C757D4006952B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C02F1B8824C757D4006952B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C02F1BA424C757D4006952B0 /* MDCycriptManager.m in Sources */,
+				C02F1BD324C757D5006952B0 /* MAMADylib.m in Sources */,
+				C02F1BAD24C757D4006952B0 /* a1a2-selectortramps-arm64.s in Sources */,
+				C02F1BAB24C757D4006952B0 /* a1a2-selectortramps-arm.s in Sources */,
+				C02F1BB124C757D4006952B0 /* a1a2-selectortramps-x86_64.s in Sources */,
+				C02F1BBB24C757D4006952B0 /* OCMethodTrace.m in Sources */,
+				C02F1BA024C757D4006952B0 /* MDConfigManager.m in Sources */,
+				C02F1BCD24C757D5006952B0 /* fishhook.c in Sources */,
+				C02F1BCA24C757D5006952B0 /* AntiAntiDebug.m in Sources */,
+				C02F1BBF24C757D5006952B0 /* OCSelectorTrampolines.mm in Sources */,
+				C02F1BFA24C75831006952B0 /* ShakeMMHelperConfig.m in Sources */,
+				C02F1BAF24C757D4006952B0 /* a1a2-selectortramps-i386.s in Sources */,
+				C02F1BB524C757D4006952B0 /* a2a3-selectortramps-i386.s in Sources */,
+				C02F1BB324C757D4006952B0 /* a2a3-selectortramps-arm.s in Sources */,
+				C02F1B9B24C757D4006952B0 /* MAMADylib.mm in Sources */,
+				C02F1BC524C757D5006952B0 /* LLDBTools.mm in Sources */,
+				C02F1BB724C757D4006952B0 /* a2a3-selectortramps-x86_64.s in Sources */,
+				C02F1BFC24C75831006952B0 /* ShakeMMHelper.mm in Sources */,
+				C02F1BA824C757D4006952B0 /* MDMethodTrace.m in Sources */,
+				C02F1C0E24C75831006952B0 /* ShakeMMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C02F1B8F24C757D4006952B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C02F1B8B24C757D4006952B0 /* MAMADylib */;
+			targetProxy = C02F1B8E24C757D4006952B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C02F1BD424C757D5006952B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C02F1BD524C757D5006952B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C02F1BD724C757D5006952B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68764L9KF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAMADylib/MAMADylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMAMADylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/MAMADylib/Class/Audio/BDTTS/BDSClientLib",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MAMADylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C02F1BD824C757D5006952B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = C68764L9KF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAMADylib/MAMADylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMAMADylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/MAMADylib/Class/Audio/BDTTS/BDSClientLib",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MAMADylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C02F1BDA24C757D5006952B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68764L9KF;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MAMA/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MAMA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C02F1BDB24C757D5006952B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C68764L9KF;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MAMA/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MAMA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C02F1B7324C757D4006952B0 /* Build configuration list for PBXProject "MAMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02F1BD424C757D5006952B0 /* Debug */,
+				C02F1BD524C757D5006952B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02F1BD624C757D5006952B0 /* Build configuration list for PBXNativeTarget "MAMADylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02F1BD724C757D5006952B0 /* Debug */,
+				C02F1BD824C757D5006952B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C02F1BD924C757D5006952B0 /* Build configuration list for PBXNativeTarget "MAMA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C02F1BDA24C757D5006952B0 /* Debug */,
+				C02F1BDB24C757D5006952B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C02F1B7024C757D4006952B0 /* Project object */;
+}
